@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+
+:root {
+  --ff-main: "Rubik", sans-serif;
+  --primary-blue: hsl(246, 80%, 60%);
+  --primary-light-orange: hsl(15, 100%, 70%);
+  --primary-soft-blue: hsl(195, 74%, 62%);
+  --primary-light-red: hsl(348, 100%, 68%);
+  --primary-lime-green: hsl(145, 58%, 55%);
+  --primary-violet: hsl(264, 64%, 52%);
+  --primary-soft-orange: hsl(43, 84%, 65%);
+  --neutral-very-dark-blue: hsl(226, 43%, 10%);
+  --neutral-dark-blue: hsl(235, 46%, 20%);
+  --neutral-desaturated-blue: hsl(235, 45%, 61%);
+  --neutral-pale-blue: hsl(236, 100%, 87%);
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--ff-main);
+  color: var(--neutral-pale-blue);
+}
+
+body{
+  background: var(--neutral-very-dark-blue);
+  padding: 5rem 1.275rem;
+}
+.wrapper{
+  display: grid;
+  margin: 0 auto;
+  width: 100%;
+  grid-template-rows: 1fr repeat(6, 0.4fr);
+  gap: 1.625rem;
+  font-weight: 300;
+}
+
+.wrapper__user {
+  background: var(--neutral-dark-blue);
+  border-radius: 1rem;
+}
+.user-info  {
+  display: flex;
+  background: var(--primary-blue);
+  padding: 2rem 1.875rem;
+  width: 100%;
+  border-radius: 1rem;
+}
+.user-info img{
+  border: .25rem solid #fff;
+  border-radius: 50%;
+  width: 75px;
+}
+.user-info-name {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+  justify-content: center;
+}
+.user-info-name span {
+  margin-top: 0.6rem;
+  font-size: 1.5rem;
+}
+
+.btn{
+  background: none;
+  border: none;
+  font-size: 1rem;
+  user-select: none;
+}
+.btn:hover {
+  cursor: pointer;
+  color: #fff;
+}
+.btn:active {
+  color: white;
+}
+.timespan {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.56rem 2rem;
+  width: 100%;
+}
+.wrapper__card{
+  border-radius: 1rem;
+  position: relative;
+}
+.wrapper__card .icon{
+  position: absolute;
+  right: 0;
+  z-index: 0;
+}
+.work{
+  background:var(--primary-light-orange);
+}
+.play{
+  background: var(--primary-soft-blue);
+}
+.study {
+  background: var(--primary-light-red);
+}
+.exercise {
+  background: var(--primary-lime-green);
+}
+.social {
+  background: var(--primary-violet);
+}
+.self-care{
+  background: var(--primary-soft-orange);
+}
+.wrapper__card-info {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2.5rem;
+  background: var(--neutral-dark-blue);
+  z-index: 1;
+  padding: 1.875rem 1.4375rem;
+  width: 100%;
+  border-radius: 1rem;
+}

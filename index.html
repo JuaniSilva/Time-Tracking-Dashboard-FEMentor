@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Time tracking dashboard</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="wrapper__user">
+        <div class="user-info">
+          <img src="images/image-jeremy.png" alt="" />
+          <div class="user-info-name">
+            <p>Report for</p>
+            <span>Jeremy Robson</span>
+          </div>
+        </div>
+        <div class="timespan">
+          <button class="btn">Daily</button>
+          <button class="btn">Weekly</button>
+          <button class="btn">Monthly</button>
+        </div>
+      </div>
+      <div class="wrapper__card work">
+        <img src="images/icon-work.svg" class="icon" alt="" />
+        <div class="wrapper__card-info">
+          <div class="card-left">
+            Work
+            <!-- <div class="daily">5hrs</div> -->
+            <div class="weekly">32hrs</div>
+            <!-- <div class="monthly">103hrs</div> -->
+          </div>
+          <div class="card-right">
+            <img src="images/icon-ellipsis.svg" alt="">
+            <!-- <div class="previous-daily">Previous - 7hrs</div> -->
+            <div class="previous-weekly">Previous - 36hrs</div>
+            <!-- <div class="previous-monthly">Previous - 128hrs</div> -->
+          </div>
+        </div>
+      </div>
+
+      <div class="wrapper__card play">
+        <img src="images/icon-play.svg" class="icon" alt="" />
+        <div class="wrapper__card-info">
+          Play
+          <div class="daily">1hr Previous - 2hrs</div>
+          <div class="weekly">10hrs Previous - 8hrs</div>
+          <div class="monthly">23hrs Previous - 29hrs</div>
+        </div>
+      </div>
+
+      <div class="wrapper__card study">
+        <img src="images/icon-study.svg" class="icon" alt="" />
+        <div class="wrapper__card-info">
+          Study
+          <div class="daily">0hrs Previous - 1hr</div>
+          <div class="weekly">4hrs Previous - 7hrs</div>
+          <div class="monthly">13hrs Previous - 19hrs</div>
+        </div>
+      </div>
+
+      <div class="wrapper__card exercise">
+        <img src="images/icon-exercise.svg" class="icon" alt="" />
+        <div class="wrapper__card-info">
+          Exercise
+          <div class="daily">1hr Previous - 1hr</div>
+          <div class="weekly">4hrs Previous - 5hrs</div>
+          <div class="monthly">11hrs Previous - 18hrs</div>
+        </div>
+      </div>
+
+      <div class="wrapper__card social">
+        <img src="images/icon-social.svg" class="icon" alt="" />
+        <div class="wrapper__card-info">
+          Social
+          <div class="daily">1hr Previous - 3hrs</div>
+          <div class="weekly">5hrs Previous - 10hrs</div>
+          <div class="monthly">21hrs Previous - 23hrs</div>
+        </div>
+      </div>
+
+      <div class="wrapper__card self-care">
+        <img src="images/icon-self-care.svg" class="icon" alt="" />
+        <div class="wrapper__card-info">
+          Self Care
+          <div class="daily">0hrs Previous - 1hr</div>
+          <div class="weekly">2hrs Previous - 2hrs</div>
+          <div class="monthly">7hrs Previous - 11hrs</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+</html>
