@@ -85,8 +85,9 @@ body{
   width: 100%;
 }
 .wrapper__card{
-  border-radius: 1rem;
+  border-radius: 1.1rem;
   position: relative;
+  height: 100%;
 }
 .wrapper__card .icon{
   position: absolute;
@@ -129,7 +130,7 @@ body{
 }
 .time {
   color: #fff;
-  font-size: clamp(1.5rem, 2.5vw, 4rem);
+  font-size: clamp(1.5rem, 3vw, 4rem);
 }
 .previous{
   display: flex;
@@ -145,6 +146,9 @@ body{
   position: absolute;
   right: 1rem;
   top: 1rem;
+}
+.ellipsis:hover{
+  cursor: pointer;
 }
 @media only screen and (min-width: 75rem){
   .wrapper{
@@ -164,13 +168,14 @@ body{
     flex-direction: column;
   }
   .user-info-name{
-    padding: 2.625rem 0 5rem;
+    padding: 2.625rem 0 3rem;
   }
   .user-info-name{
     color: white;
     font-weight: 300;
   }
   .user-info-name span{
+  font-size: 2rem;
     max-width: 6ch;
     line-height: 1.6;
   }
@@ -180,13 +185,18 @@ body{
     justify-content: space-around;
     height: 10.25rem;
   }
+  .wrapper__card{
+    min-height: 100%;
+    display: flex;
+  }
   .wrapper__card-info{
+    margin-top: auto;
     flex-direction: column;
     justify-content: left;
     height: 12.5rem;
   }
   .time{
-    margin-top: 2.5rem;
+    margin-top: 2rem;
   }
   .previous{
     display: block;
